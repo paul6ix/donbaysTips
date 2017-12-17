@@ -1,0 +1,40 @@
+<!--sidemenu to be used later just in case-->
+<!--<ion-side-menus>
+  <ion-side-menu-content>
+    <ion-nav-view></ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-energized ">
+      <h4 class=" title stable "> Main Menu</h4>
+
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item ng-repeat="category in categories" menu-close >
+          <span>
+            {{category.title}}
+          </span>
+          <span class="badge badge-assertive">{{category.count}}</span>
+        </ion-item>
+
+      </ion-list>
+    </ion-content>
+
+  </ion-side-menu>
+</ion-side-menus>-->
+<!--for tab menu implementation -->
+<ion-tabs class="tabs-positive tabs-icon-top">
+
+  <ion-tab title="News" icon-on="ion-ios-filing" icon-off="ion-ios-filing-outline" href="#/main/news">
+    <ion-nav-view name="tab-news"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab title="Tips" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline" href="#/main/tips">
+    <ion-nav-view name="tab-tips"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab title="LiveScore" icon-on="ion-ios-gear" icon-off="ion-ios-gear-outline" href="#/main/livescore">
+    <ion-nav-view name="tab-livescore"></ion-nav-view>
+  </ion-tab>
+
+</ion-tabs>
