@@ -4,11 +4,10 @@
 </ion-header-bar>
 <ion-content>
   <ion-list>
-    <ion-item ng-repeat="category in categories" menu-close>
-          <span>
-            {{category.title}}
+    <ion-item ng-repeat="post in posts">
+          <span ng-bind-html="post.title">
           </span>
-      <span class="badge badge-assertive">{{category.count}}</span>
+
     </ion-item>
 
   </ion-list>

@@ -10,11 +10,11 @@
     </ion-header-bar>
     <ion-content>
       <ion-list>
-        <ion-item ng-repeat="category in categories" menu-close >
+        <ion-item ng-repeat="post in posts" menu-close >
           <span>
-            {{category.title}}
+            {{post.title}}
           </span>
-          <span class="badge badge-assertive">{{category.count}}</span>
+          <span class="badge badge-assertive">{{post.count}}</span>
         </ion-item>
 
       </ion-list>
@@ -31,6 +31,7 @@
 
   <ion-tab title="Tips" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline" href="#/main/tips">
     <ion-nav-view name="tab-tips"></ion-nav-view>
+
   </ion-tab>
 
   <ion-tab title="LiveScore" icon-on="ion-ios-gear" icon-off="ion-ios-gear-outline" href="#/main/livescore">
