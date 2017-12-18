@@ -20,7 +20,7 @@ angular.module('starter')
   })
   .controller('NewsController', function ($scope, $http, $sce) {
     $scope.articles = [];
-    $http.get("https://newsapi.org/v2/top-headlines?sources=bbc-sport&apiKey=d3a6e97988bd43a1833061e16e5b9b5c").then(function (newsData) {
+    $http.get("https://newsapi.org/v2/top-headlines?sources=the-sport-bible&apiKey=d3a6e97988bd43a1833061e16e5b9b5c").then(function (newsData) {
         $scope.articles = newsData.data.articles;
         console.log(newsData);
       },
