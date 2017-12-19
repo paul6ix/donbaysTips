@@ -12,6 +12,9 @@
   </div>
 
   <ion-content class="has-subheader">
+    <ion-refresher pulling-text="Pull down to refresh" on-refresh="DoRefresh()">
+
+    </ion-refresher>
     <ion-list can-swipe="true">
       <ion-item class="item item-thumbnail-left card item-text-wrap item-icon-right"
                 ng-repeat="article in articles | filter : {title : searchText}">
